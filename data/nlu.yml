@@ -1,0 +1,141 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: cuisine
+  examples: |
+    - What type of cuisine is the restaurant?
+    - What type of food can we eat?
+    - What cuisine?
+    - What are the specials?
+
+- intent: timings
+  examples: |
+    - What are timings of the restaurant?
+    - When can i make reservation?
+    - What days are you open?
+    - What time?
+    - What days?
+    - What are your timings?
+
+- intent: res_cancel
+  examples: |
+    - How do I cancel a reservation?
+    - Cancel Reservations
+
+- intent: reservation_1
+  examples: | 
+    - I want to reserve a table
+
+
+- intent: reservations
+  examples: | 
+    - [1](seat) seat
+    - [2](seat) seats
+    - [3](seat) seats
+    - [4](seat) seats
+    - [5](seat) seats
+    - [7](seat) seats
+    - [6](seat) seats
+    - [8](seat) seats
+    - I want to reserve a table for a party of [2](seat)
+    - I want to reserve a table for a party of [3](seat)
+    - I want to reserve a table for a party of [4](seat)
+    - I want to reserve a table for a party of [5](seat)
+    - I want to reserve a table for a party of [6](seat)
+    - I want to reserve a table for a party of [7](seat)
+    - I want to reserve a table for a party of [8](seat)
+
+- intent: sections
+  examples: |
+    - [1](section)
+    - [2](section)

@@ -1,0 +1,65 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - cuisine
+  - timings
+  - res_cancel
+  - reservation_1
+  - sections
+
+entities:
+  - seat
+  - section
+
+slots:
+  seat:
+    type: text
+  section:
+    type: text
+  
+actions:
+  - action_timings  
+  - action_reservation
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome to Rasa Restaurant! How can i help you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_cuisine:
+  - text: "Our chef is a master of the Italian cuisine. Our core speciality is our pasta, which is renowned throughout the city." 
+
+  utter_cancel:
+  - text: "To cancel a reservation, simply call us at +91 9876543210 and cancel your reservation"
+   
+  utter_reservation_1:
+  - text: "How many seats would you like to reserve?"
+
+  utter_section:
+  - text: "Which section would you like to book 1)AC 2)Non-AC ?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
